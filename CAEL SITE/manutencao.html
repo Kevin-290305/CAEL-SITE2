@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Manutenção — CAEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="manutencao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Manrope:wght@400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body class="page-manutencao">
+    <!-- Manchas de tinta -->
+    <div class="ink-splashes">
+        <div class="splash splash-1"></div>
+        <div class="splash splash-2"></div>
+        <div class="splash splash-3"></div>
+        <div class="splash splash-4"></div>
+        <div class="splash splash-5"></div>
+        <div class="splash splash-6"></div>
+        <div class="splash splash-7"></div>
+    </div>
+
+    <!-- Ícones decorativos flutuantes -->
+    <div class="decorative-icons">
+        <i class="fas fa-film icon-deco icon-1"></i>
+        <i class="fas fa-camera icon-deco icon-2"></i>
+        <i class="fas fa-masks-theater icon-deco icon-3"></i>
+        <i class="fas fa-music icon-deco icon-4"></i>
+        <i class="fas fa-video icon-deco icon-5"></i>
+        <i class="fas fa-microphone icon-deco icon-6"></i>
+        <i class="fas fa-star icon-deco icon-7"></i>
+        <i class="fas fa-feather icon-deco icon-8"></i>
+        <i class="fas fa-film icon-deco icon-9"></i>
+        <i class="fas fa-camera icon-deco icon-10"></i>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <a href="index.html" class="back-home" data-testid="link-voltar">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+        <div class="ingressos-button-wrapper ingressos-inline">
+            <div class="ingressos-icons">
+                <i class="fas fa-sparkles sparkle-1"></i>
+                <i class="fas fa-star star-1"></i>
+                <i class="fas fa-bolt bolt-1"></i>
+                <i class="fas fa-sparkles sparkle-2"></i>
+            </div>
+            <a href="https://remix-of-cael-ingressos-platform.vercel.app/" target="_blank" rel="noopener noreferrer" class="ingressos-button" data-testid="btn-ingressos">
+                <i class="fas fa-ticket"></i>
+                <span>INGRESSOS AQUI</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo central -->
+    <main class="manut-main">
+        <div class="manut-card">
+            <div class="manut-icon-stage">
+                <div class="manut-spotlight"></div>
+                <div class="manut-curtain manut-curtain-left"></div>
+                <div class="manut-curtain manut-curtain-right"></div>
+                <i class="fas fa-screwdriver-wrench manut-icon"></i>
+                <i class="fas fa-gear manut-gear manut-gear-1"></i>
+                <i class="fas fa-gear manut-gear manut-gear-2"></i>
+            </div>
+
+            <span class="manut-kicker" id="manut-kicker">
+                <i class="fas fa-masks-theater"></i> <span id="manut-area">Página</span>
+            </span>
+
+            <h1 class="manut-title">
+                Estamos preparando<br>
+                <span class="manut-title-accent">nosso melhor espetáculo</span>
+            </h1>
+
+            <p class="manut-message">
+                Esta página está em <strong>manutenção</strong>.<br>
+                Em breve, as cortinas se abrirão com novidades incríveis aqui na <strong>CAEL</strong>! 🎭✨
+            </p>
+
+            <div class="manut-progress">
+                <div class="manut-progress-bar"></div>
+            </div>
+
+            <p class="manut-quote">"Sou quem Sou, porque Somos Todos Nós!"</p>
+
+            <div class="manut-actions">
+                <a href="index.html" class="cta-button btn-hero" data-testid="btn-voltar-inicio">
+                    <span class="btn-glow"></span>
+                    <span class="btn-shine"></span>
+                    <i class="fas fa-house btn-hero-icon"></i>
+                    <span class="btn-hero-text">Voltar para o início</span>
+                    <i class="fas fa-arrow-right btn-hero-arrow"></i>
+                </a>
+                <a href="https://remix-of-cael-ingressos-platform.vercel.app/" target="_blank" rel="noopener noreferrer" class="manut-secondary" data-testid="btn-ingressos-alt">
+                    <i class="fas fa-ticket"></i>
+                    <span>Comprar ingressos</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-phrase">
+        <h2>Sou quem Sou, porque<br>Somos Todos Nós!</h2>
+    </footer>
+
+    <script>
+        // Detectar área (elenco / eventos) via query string e personalizar conteúdo
+        const params = new URLSearchParams(window.location.search);
+        const area = (params.get('area') || '').toLowerCase();
+
+        const config = {
+            elenco: {
+                titleSuffix: 'Produtora de Elenco CAEL',
+                kickerIcon: 'fa-video',
+                kickerText: 'Produtora de Elenco',
+                accent: 'orange'
+            },
+            eventos: {
+                titleSuffix: 'Produtora de Eventos CAEL',
+                kickerIcon: 'fa-masks-theater',
+                kickerText: 'Produtora de Eventos',
+                accent: 'purple'
+            }
+        };
+
+        const cfg = config[area];
+        if (cfg) {
+            document.title = `Em Manutenção — ${cfg.titleSuffix}`;
+            document.getElementById('manut-area').textContent = cfg.kickerText;
+            const iconEl = document.querySelector('#manut-kicker i');
+            iconEl.className = `fas ${cfg.kickerIcon}`;
+            document.body.dataset.area = area;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos CAEL - Formação Artística Completa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Manrope:wght@400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body class="page-cursos">
+    <!-- Manchas de Tinta no Fundo (mesmo tema) -->
+    <div class="ink-splashes">
+        <div class="splash splash-1"></div>
+        <div class="splash splash-2"></div>
+        <div class="splash splash-3"></div>
+        <div class="splash splash-4"></div>
+        <div class="splash splash-5"></div>
+        <div class="splash splash-6"></div>
+        <div class="splash splash-7"></div>
+    </div>
+
+    <!-- Ícones Decorativos -->
+    <div class="decorative-icons">
+        <i class="fas fa-film icon-deco icon-1"></i>
+        <i class="fas fa-camera icon-deco icon-2"></i>
+        <i class="fas fa-masks-theater icon-deco icon-3"></i>
+        <i class="fas fa-music icon-deco icon-4"></i>
+        <i class="fas fa-video icon-deco icon-5"></i>
+        <i class="fas fa-microphone icon-deco icon-6"></i>
+        <i class="fas fa-star icon-deco icon-7"></i>
+        <i class="fas fa-feather icon-deco icon-8"></i>
+        <i class="fas fa-film icon-deco icon-9"></i>
+        <i class="fas fa-camera icon-deco icon-10"></i>
+    </div>
+
+    <!-- Top Bar: Voltar + Ingressos -->
+    <header class="top-bar">
+        <a href="index.html" class="back-home" data-testid="link-voltar">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar</span>
+        </a>
+        <div class="ingressos-button-wrapper ingressos-inline">
+            <div class="ingressos-icons">
+                <i class="fas fa-sparkles sparkle-1"></i>
+                <i class="fas fa-star star-1"></i>
+                <i class="fas fa-bolt bolt-1"></i>
+                <i class="fas fa-sparkles sparkle-2"></i>
+            </div>
+            <button class="ingressos-button" data-testid="btn-ingressos">
+                <i class="fas fa-ticket"></i>
+                <span>INGRESSOS AQUI</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-cursos">
+        <div class="hero-eyebrow">
+            <span class="dot"></span>
+            <span>CAEL — Escola &amp; Produtora</span>
+            <span class="dot"></span>
+        </div>
+        <h1 class="hero-title">Cursos <span class="hero-accent">CAEL</span></h1>
+        <p class="hero-sub">A sua formação artística completa — Teatro, TV, Cinema, Canto, Dança, Circo e Dublagem.</p>
+        <nav class="hero-nav">
+            <a href="#quem-somos" data-testid="nav-quem-somos"><i class="fas fa-user-tie"></i> Quem Somos</a>
+            <a href="#escola" data-testid="nav-escola"><i class="fas fa-school"></i> A Escola</a>
+            <a href="#cursos" data-testid="nav-cursos"><i class="fas fa-graduation-cap"></i> Cursos</a>
+            <a href="#calendario" data-testid="nav-calendario"><i class="fas fa-calendar-star"></i> Calendário</a>
+            <a href="#contato-equipe" data-testid="nav-contato-equipe"><i class="fas fa-address-book"></i> Equipe</a>
+            <a href="#contato" data-testid="nav-contato"><i class="fas fa-envelope"></i> Contato</a>
+        </nav>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos" class="section">
+        <div class="section-head">
+            <span class="section-kicker"><i class="fas fa-star"></i> Quem Somos</span>
+            <h2 class="section-title">Centro de Artes <span class="accent-orange">Educação e Lazer</span> EIRELI</h2>
+        </div>
+
+        <div class="about-school">
+            <p>A Escola CAEL é reconhecida pelo <strong>MEC</strong> e pelo <strong>SATED (Sindicato dos Artistas)</strong>, com emissão de <strong>DRT</strong> para Atores e Artistas Circenses. Oferecemos aulas de <strong>Teatro, TV, Cinema, Canto, Dança (com foco em musicais), Circo e Dublagem</strong>.</p>
+
+            <p>Mais de <strong>700 alunos</strong> já passaram pela nossa escola ao longo de sua trajetória. Nosso calendário pedagógico é estruturado de forma a potencializar o aproveitamento das atividades e o desenvolvimento artístico de cada estudante.</p>
+
+            <p>O principal evento da escola é o <strong>FESTIVAL CAEL EM CENA</strong>, em atividade há mais de <strong>10 anos</strong>, no qual já foram produzidos <strong>mais de 50 espetáculos</strong>, contemplando os mais variados gêneros teatrais. Com frequência, convidamos profissionais atuantes nas áreas em estudo para ministrar <strong>workshops e encontros especiais</strong>, garantindo reciclagem constante e aprofundamento prático dos conteúdos trabalhados em sala de aula.</p>
+
+            <p>A Escola CAEL mantém o <strong>NÚCLEO DE PESQUISA TEATRAL ELKMIA</strong>, companhia criada exclusivamente para participação em festivais de teatro pelo Brasil, colecionando excelentes resultados. Em <strong>2026</strong>, nasceu também a <strong>CIA DAS ARTES CAEL</strong>, grupo teatral com o mesmo foco em festivais, ampliando as possibilidades de atuação e a visibilidade da escola no cenário artístico.</p>
+
+            <p>Nossa turma circense está em constante evolução, com o objetivo de, em breve, representar a escola em festivais de <strong>Circo e Artes de Rua</strong>. Na área de <strong>TV e Cinema</strong>, os materiais produzidos pelos alunos são encaminhados para festivais de curtas, médias e longas-metragens, em âmbito nacional e internacional.</p>
+
+            <p class="muted">Contamos com uma equipe preparada, professores qualificados e um espaço físico adequado para atender plenamente às necessidades de formação e aprendizado dos nossos alunos.</p>
+        </div>
+
+        <!-- Sub-seção: Diretor -->
+        <div class="director-block">
+            <div class="section-head">
+                <span class="section-kicker"><i class="fas fa-user-tie"></i> Sobre o Diretor da Escola CAEL</span>
+                <h2 class="section-title">Direção Artística: <span class="accent-purple">Renato Bispo</span></h2>
+            </div>
+
+            <div class="two-col">
+                <div class="col-text">
+                    <p>Com mais de <strong>três décadas</strong> de dedicação às artes cênicas, Renato Bispo é a força criativa por trás da CAEL. <strong>Ator, diretor e produtor cultural desde 1988</strong>, ele une sua vasta experiência nos palcos à missão de descobrir, lapidar e conectar novos talentos ao mercado de trabalho.</p>
+                    <p class="muted">Guiado pela filosofia <em>“Sou quem Sou porque Somos Todos Nós!”</em>, Renato transforma o ensino artístico em oportunidades reais, sempre com foco no trabalho em equipe e na gratidão.</p>
+                    <a href="#contato" class="cta-button btn-inline btn-hero" data-testid="btn-quem-somos-cta">
+                        <span class="btn-glow"></span>
+                        <span class="btn-shine"></span>
+                        <i class="fas fa-play btn-hero-icon"></i>
+                        <span class="btn-hero-text">Venha aprender com quem faz acontecer!</span>
+                        <i class="fas fa-arrow-right btn-hero-arrow"></i>
+                    </a>
+                </div>
+
+                <div class="col-highlights">
+                    <h3 class="highlights-title">Destaques da trajetória</h3>
+                    <ul class="highlights-list">
+                        <li>
+                            <span class="hl-icon"><i class="fas fa-trophy"></i></span>
+                            <div>
+                                <strong>Carreira Premiada</strong>
+                                <p>Mais de <strong>70 prêmios</strong> como diretor, ator e produtor.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hl-icon"><i class="fas fa-people-group"></i></span>
+                            <div>
+                                <strong>Mega Produções</strong>
+                                <p>Direção de <strong>400 profissionais</strong> na “Paixão de Cristo” e <strong>250 artistas</strong> na inauguração da Sala Palma de Ouro.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hl-icon"><i class="fas fa-tv"></i></span>
+                            <div>
+                                <strong>Reconhecimento Nacional</strong>
+                                <p>Atuação no <strong>“Show do Xaropinho”</strong> (Grupo Massa/SBT) e direção do projeto <strong>“A Turma do Arrepio”</strong>.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="hl-icon"><i class="fas fa-seedling"></i></span>
+                            <div>
+                                <strong>Fábrica de Talentos</strong>
+                                <p>Alunos no elenco de <strong>novelas, séries, filmes e publicidades</strong> de alcance nacional, em emissoras como <strong>SBT, Rede Globo, Rede Record, Rede Século 21</strong> e plataformas como <strong>Netflix</strong> e <strong>Amazon</strong>.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANIVERSARIANTES DO MÊS -->
+    <section id="aniversariantes" class="section section-birthdays">
+        <div class="section-head section-head-center">
+            <span class="section-kicker section-kicker-birthday"><i class="fas fa-cake-candles"></i> Aniversariantes do Mês</span>
+            <h2 class="section-title">Hoje a festa é por <span class="accent-yellow">conta deles!</span></h2>
+            <p class="section-sub center">Celebramos quem faz a CAEL acontecer todos os dias. Parabéns, família CAEL! 🎉</p>
+        </div>
+
+        <div class="birthday-carousel" data-testid="birthday-carousel">
+            <button class="bday-nav bday-prev" aria-label="Anterior" data-testid="bday-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="bday-stage">
+                <div class="bday-confetti">
+                    <i class="fas fa-star confetti c1"></i>
+                    <i class="fas fa-heart confetti c2"></i>
+                    <i class="fas fa-music confetti c3"></i>
+                    <i class="fas fa-star confetti c4"></i>
+                    <i class="fas fa-heart confetti c5"></i>
+                </div>
+
+                <div class="bday-slides" id="bday-slides">
+                    <!-- Slides inseridos via JS -->
+                </div>
+            </div>
+
+            <button class="bday-nav bday-next" aria-label="Próximo" data-testid="bday-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="bday-dots" id="bday-dots" data-testid="bday-dots"></div>
+    </section>
+
+    <!-- SOBRE A ESCOLA -->
+    <section id="escola" class="section section-alt">
+        <div class="section-head">
+            <span class="section-kicker"><i class="fas fa-school"></i> Sobre a Escola</span>
+            <h2 class="section-title">CAEL: O seu passaporte para o <span class="accent-orange">mercado artístico</span></h2>
+        </div>
+
+        <p class="lead">O CAEL (Centro de Artes, Educação e Lazer) é muito mais do que uma escola de artes: é uma instituição de ensino de excelência. Localizados em <strong>Salto/SP</strong>, com acesso rápido e fácil à capital, oferecemos uma experiência imersiva que une <strong>formação certificada</strong> e <strong>prática profissional</strong>. Atuamos com uma estrutura dupla e integrada de <strong>Escola e Produtora</strong>, garantindo que nossos alunos não apenas aprendam a arte com respaldo oficial, mas vivenciem o mercado de trabalho na prática.</p>
+
+        <div class="subsection-title-wrap">
+            <h3 class="subsection-title"><span class="accent-yellow">A Escola:</span> Formação Reconhecida e Prática Constante</h3>
+            <p class="subsection-lead">Preparamos nosso elenco com uma grade curricular completa, focada no desenvolvimento <strong>técnico, moral e profissional</strong>.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon feature-icon-purple"><i class="fas fa-certificate"></i></div>
+                <h3>Dupla Certificação (MEC e SATED)</h3>
+                <p>Primeira escola da região com cursos reconhecidos pelo <strong>Ministério da Educação (MEC)</strong> e pelo <strong>SATED/SP</strong>. Atesta a qualidade do ensino e habilita nossos alunos para o registro profissional (<strong>DRT Mirim, Figuração, Definitivo e Circense</strong>).</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon feature-icon-orange"><i class="fas fa-chalkboard-user"></i></div>
+                <h3>Cursos Completos</h3>
+                <p>Aulas de <strong>Teatro, TV, Cinema, Canto, Dança, Circo e Dublagem</strong> — com grade curricular focada em desenvolvimento técnico, moral e profissional.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon feature-icon-yellow"><i class="fas fa-masks-theater"></i></div>
+                <h3>Vivência de Palco</h3>
+                <p>Realizamos anualmente o <strong>Festival CAEL em CENA</strong>, com montagens primorosas avaliadas por bancas de profissionais do mercado.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon feature-icon-purple"><i class="fas fa-network-wired"></i></div>
+                <h3>Conexão com o Mercado</h3>
+                <p>Workshops e treinamentos frequentes com <strong>renomados produtores de elenco, diretores de novela e atores</strong> em atividade.</p>
+            </div>
+        </div>
+
+        <div class="essence">
+            <h3 class="essence-title">Nossa Essência</h3>
+            <div class="essence-grid">
+                <div class="essence-item">
+                    <span class="essence-label">Missão</span>
+                    <p>Provocar a transformação do ser humano através da Arte.</p>
+                </div>
+                <div class="essence-item">
+                    <span class="essence-label">Visão</span>
+                    <p>Levar o conceito de Arte para o maior número de pessoas, buscando a transformação pessoal e social.</p>
+                </div>
+                <div class="essence-item">
+                    <span class="essence-label">Valores</span>
+                    <p>Família, Paixão, Dedicação, Respeito e Generosidade.</p>
+                </div>
+                <div class="essence-item">
+                    <span class="essence-label">Objetivo</span>
+                    <p>Formar profissionais completos, sensíveis e críticos, que dominem a linguagem cênica e usem sua arte para refletir e modificar a realidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pillars">
+            <h3 class="pillars-title">O Artista CAEL — Nosso Compromisso com a Sociedade</h3>
+            <p class="pillars-lead">Nosso objetivo vai além dos palcos e das câmeras. Trabalhamos para formar intérpretes que sejam <strong>verdadeiros protagonistas de suas histórias</strong>, focando em três pilares:</p>
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <span class="pillar-num">01</span>
+                    <h4>Excelência Técnica</h4>
+                    <p>Domínio completo dos recursos expressivos — voz, corpo e movimento — a serviço da linguagem cênica.</p>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-num">02</span>
+                    <h4>Consciência Social</h4>
+                    <p>Capacidade de analisar, refletir e transformar a realidade através da arte.</p>
+                </div>
+                <div class="pillar">
+                    <span class="pillar-num">03</span>
+                    <h4>Perfil do Aluno</h4>
+                    <p>Talentos movidos por paixão, dedicação e generosidade, dispostos a desenvolver alta sensibilidade, criatividade e solidariedade.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Missão do Corpo Docente -->
+        <div class="docentes-block">
+            <div class="docentes-head">
+                <span class="docentes-icon"><i class="fas fa-chalkboard-user"></i></span>
+                <div>
+                    <span class="grade-tag">Corpo Docente</span>
+                    <h3>A Missão dos Nossos Professores</h3>
+                </div>
+            </div>
+            <p>Nossos professores unem <strong>teoria e prática</strong> para guiar cada aluno em uma jornada de descoberta artística. Através de um treinamento que integra <strong>corpo, mente e emoção</strong>, estimulamos a criação orgânica e autêntica — libertando o ator de fórmulas prontas e permitindo que ele encontre sua própria <strong>identidade cênica</strong> por meio de dinâmicas individuais e coletivas.</p>
+            <p class="muted-quote">Mais do que ensinar técnicas, nossos professores são <em>mentores</em> que ajudam você a descobrir a sua <strong>verdadeira voz artística</strong>. Aqui, através de vivências práticas, você é estimulado a mergulhar em um universo de criação pura para construir momentos cênicos inesquecíveis.</p>
+        </div>
+    </section>
+
+    <!-- NOSSOS CURSOS -->
+    <section id="cursos" class="section">
+        <div class="section-head">
+            <span class="section-kicker"><i class="fas fa-graduation-cap"></i> Nossos Cursos</span>
+            <h2 class="section-title">Três grades para uma <span class="accent-orange">formação de excelência</span></h2>
+            <p class="section-sub">Infraestrutura profissional, salas equipadas com tecnologia de ponta e ensino dividido em três grades principais.</p>
+        </div>
+
+        <!-- Grade Teatral -->
+        <article class="grade-card grade-teatral">
+            <div class="grade-head">
+                <span class="grade-emoji"><i class="fas fa-masks-theater"></i></span>
+                <div>
+                    <span class="grade-tag">Grade Teatral</span>
+                    <h3>Teatro, TV, Cinema, Canto e Dança</h3>
+                </div>
+            </div>
+            <p>Formação múltipla que abrange todas as linguagens cênicas. O ensino de canto e dança é focado no aprimoramento para o <strong>teatro musical</strong>, garantindo ao ator ferramentas completas para os palcos.</p>
+
+            <div class="grade-modules">
+                <div class="module">
+                    <h4><i class="fas fa-book-open"></i> Teatro Profissionalizante</h4>
+                    <p>Matriz dividida em <strong>teórico</strong> (programas e módulos sequenciais que ampliam visão de mundo e capacidade crítica) e <strong>prático</strong> (autoconhecimento orgânico do corpo). Durante o ano, o aluno vivencia o processo completo — da montagem à temporada do espetáculo.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-video"></i> TV e Cinema</h4>
+                    <p>Estrutura profissional com exercícios práticos de produção audiovisual. Como conclusão, o aluno participa da <strong>gravação de um filme</strong>, incentivado a inscrever o projeto em Festivais de Cinema.</p>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h5>Benefícios</h5>
+                <ul>
+                    <li><i class="fas fa-check"></i> Preparação física, vocal e emocional completa para palcos e telas.</li>
+                    <li><i class="fas fa-check"></i> Experiência real de mercado com temporadas de espetáculos e gravação de filmes.</li>
+                    <li><i class="fas fa-check"></i> Desenvolvimento de senso crítico, empatia e versatilidade artística.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Grade Circo -->
+        <article class="grade-card grade-circo">
+            <div class="grade-head">
+                <span class="grade-emoji"><i class="fas fa-tent-arrow-turn-left"></i></span>
+                <div>
+                    <span class="grade-tag">Grade de Circo</span>
+                    <h3>Atividades Aéreas e Solo</h3>
+                </div>
+            </div>
+            <p>Os alunos passam por <strong>todos os segmentos da arte circense</strong>, unindo fundamentação teórica à prática intensiva, com contato direto e seguro com as mais diversas modalidades do picadeiro.</p>
+
+            <div class="grade-modules">
+                <div class="module">
+                    <h4><i class="fas fa-person-falling"></i> Aéreos</h4>
+                    <p>Expressão e força exigidas em <strong>tecido, lira e trapézio</strong>, com treinamento técnico e artístico progressivo.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-person-running"></i> Solo</h4>
+                    <p>Acrobacias, equilíbrios e coordenação — base completa para o artista circense.</p>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h5>Benefícios</h5>
+                <ul>
+                    <li><i class="fas fa-check"></i> Desenvolvimento acelerado de força, flexibilidade, equilíbrio e coordenação motora.</li>
+                    <li><i class="fas fa-check"></i> Superação de limites físicos e mentais, promovendo alta autoconfiança.</li>
+                    <li><i class="fas fa-check"></i> Estímulo à criatividade, disciplina e expressão corporal não-verbal.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Grade Dublagem -->
+        <article class="grade-card grade-dublagem">
+            <div class="grade-head">
+                <span class="grade-emoji"><i class="fas fa-microphone-lines"></i></span>
+                <div>
+                    <span class="grade-tag">Grade de Dublagem</span>
+                    <h3>Treinamento imersivo de estúdio</h3>
+                </div>
+            </div>
+            <p>Prepara o ator para dar voz a diferentes personagens, com programas estruturados que simulam a <strong>rotina de um estúdio profissional</strong> de gravação.</p>
+
+            <div class="grade-modules modules-grid">
+                <div class="module">
+                    <h4><i class="fas fa-lungs"></i> Técnica Vocal e Dicção</h4>
+                    <p>Respiração, aquecimento e clareza na articulação das palavras.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-heart"></i> Interpretação e Adaptação</h4>
+                    <p>Captar a emoção do ator na tela e traduzi-la de forma natural para o nosso idioma.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-mouth"></i> Sincronismo Labial (Lip Sync)</h4>
+                    <p>Encaixar a voz no tempo exato da boca do personagem, respeitando os <em>loops</em> de gravação.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-headphones"></i> Prática de Estúdio</h4>
+                    <p>Microfones, fones, <em>timecodes</em> e jargões técnicos da direção de dublagem.</p>
+                </div>
+                <div class="module">
+                    <h4><i class="fas fa-clapperboard"></i> Formatos Audiovisuais</h4>
+                    <p>Animações, live-action, séries, documentários e games.</p>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h5>Benefícios</h5>
+                <ul>
+                    <li><i class="fas fa-check"></i> Domínio absoluto do aparelho fonador e expansão da versatilidade vocal.</li>
+                    <li><i class="fas fa-check"></i> Leitura rápida à primeira vista e agilidade de improvisação.</li>
+                    <li><i class="fas fa-check"></i> Escuta ativa e precisão rítmica.</li>
+                    <li><i class="fas fa-check"></i> Inserção em um dos mercados audiovisuais mais aquecidos e rentáveis do mundo.</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- CALENDÁRIO -->
+    <section id="calendario" class="section section-alt">
+        <div class="section-head">
+            <span class="section-kicker"><i class="fas fa-calendar-star"></i> Calendário Cultural</span>
+            <h2 class="section-title">Nossa agenda anual <span class="accent-yellow">em cena</span></h2>
+            <p class="section-sub">A programação cultural CAEL — eventos, festivais, workshops e celebrações que você não pode perder.</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Junho -->
+            <article class="timeline-card timeline-highlight" data-testid="cal-junho">
+                <div class="timeline-month">
+                    <span class="tm-num">06</span>
+                    <span class="tm-name">Junho</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-snowflake"></i> Festival de Inverno CAEL</span>
+                    <h3>Programação especial para toda a família</h3>
+                    <p>O Festival de Inverno CAEL acontece nos dias <strong>20 e 21 de junho</strong>, com uma maravilhosa programação para toda a família. Venha viver momentos especiais de arte, cultura e emoção!</p>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-date"><i class="fas fa-calendar-day"></i> <strong>20/06</strong> · 15h</div>
+                            <div class="event-name">A Villa do Xaropinho</div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date"><i class="fas fa-calendar-day"></i> <strong>21/06</strong> · 19h</div>
+                            <div class="event-name">Moisés, o musical</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Julho -->
+            <article class="timeline-card" data-testid="cal-julho">
+                <div class="timeline-month">
+                    <span class="tm-num">07</span>
+                    <span class="tm-name">Julho</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-graduation-cap"></i> Mês dos Workshops</span>
+                    <h3>5 workshops imperdíveis</h3>
+                    <p>Imersões intensivas conduzidas por profissionais do mercado, abrindo caminhos novos para alunos e interessados.</p>
+                    <div class="workshops-grid">
+                        <div class="ws-pill"><i class="fas fa-masks-theater"></i> Teatro</div>
+                        <div class="ws-pill"><i class="fas fa-tv"></i> TV</div>
+                        <div class="ws-pill"><i class="fas fa-clapperboard"></i> Cinema</div>
+                        <div class="ws-pill"><i class="fas fa-music"></i> Canto</div>
+                        <div class="ws-pill"><i class="fas fa-person-running"></i> Dança</div>
+                        <div class="ws-pill"><i class="fas fa-microphone-lines"></i> Dublagem</div>
+                    </div>
+                    <details class="ws-details">
+                        <summary>Ver detalhes de cada workshop</summary>
+                        <ul class="ws-list">
+                            <li><strong>Teatro:</strong> expressão corporal e vocal, improvisação, criação de personagens e presença de palco.</li>
+                            <li><strong>TV:</strong> atuação para câmera, linguagem televisiva, marcações de cena e interpretação para close.</li>
+                            <li><strong>Cinema:</strong> sutilezas de expressão, construção interna do personagem, enquadramento e continuidade.</li>
+                            <li><strong>Canto:</strong> técnica vocal, respiração, afinação, projeção e interpretação musical.</li>
+                            <li><strong>Dança:</strong> ritmos, coordenação motora, consciência corporal e coreografias em grupo.</li>
+                            <li><strong>Dublagem:</strong> ritmos, coordenação motora, consciência corporal e coreografias em grupo.</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+
+            <!-- Agosto -->
+            <article class="timeline-card" data-testid="cal-agosto">
+                <div class="timeline-month">
+                    <span class="tm-num">08</span>
+                    <span class="tm-name">Agosto</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-heart"></i> Projeto Passos da Família</span>
+                    <h3>A família ainda mais perto da arte</h3>
+                    <p>Surgiu com o objetivo de <strong>aproximar pais e responsáveis</strong> dos alunos, promovendo encontros e convivência através de atividades em conjunto. É uma oportunidade especial para que as famílias conheçam de perto o trabalho, o desenvolvimento e as conquistas de cada aluno.</p>
+                </div>
+            </article>
+
+            <!-- Setembro -->
+            <article class="timeline-card" data-testid="cal-setembro">
+                <div class="timeline-month">
+                    <span class="tm-num">09</span>
+                    <span class="tm-name">Setembro</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-tv"></i> Passeio do Conhecimento</span>
+                    <h3>Visita às emissoras de comunicação</h3>
+                    <p>Nossos alunos realizam um <strong>grande passeio do conhecimento</strong> em emissoras de TV e mídia para conhecer de perto esse universo, vivenciar o ambiente profissional e se inspirar com novas experiências. Uma visita que aproxima o aluno da realidade da TV e fortalece seus sonhos.</p>
+                </div>
+            </article>
+
+            <!-- Outubro -->
+            <article class="timeline-card timeline-highlight" data-testid="cal-outubro">
+                <div class="timeline-month">
+                    <span class="tm-num">10</span>
+                    <span class="tm-name">Outubro</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-star"></i> Dia Divertido + Festival CAEL em CENA</span>
+                    <h3>Dois grandes momentos</h3>
+                    <div class="event-sub">
+                        <h4><i class="fas fa-smile"></i> Dia Divertido CAEL</h4>
+                        <p>Encontro com a comunidade onde a escola e a Produtora CAEL abrem seus espaços (ou ocupam locais alternativos) para celebrar a cultura através de teatro, música, dança, canto e diversas manifestações criativas — em uma atmosfera de alegria e integração.</p>
+                    </div>
+                    <div class="event-sub">
+                        <h4><i class="fas fa-masks-theater"></i> Festival CAEL em CENA</h4>
+                        <p>Reúne todas as apresentações artísticas da Escola e Produtora CAEL na <strong>Sala Palma de Ouro</strong>, em Salto. Cada aluno tem a oportunidade de subir ao palco e mostrar todo o conhecimento, prática e amadurecimento artístico conquistados durante o ano.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Novembro -->
+            <article class="timeline-card" data-testid="cal-novembro">
+                <div class="timeline-month">
+                    <span class="tm-num">11</span>
+                    <span class="tm-name">Novembro</span>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-badge"><i class="fas fa-masks-theater"></i> Festival CAEL em CENA — Continuação</span>
+                    <h3>O encerramento do ciclo no palco</h3>
+                    <p>As últimas apresentações do Festival CAEL em CENA na <strong>Sala Palma de Ouro</strong>. Mais oportunidades para que cada aluno celebre sua evolução nas diferentes linguagens da arte — a coroação de um ano inteiro de dedicação.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTATO EQUIPE CAEL -->
+    <section id="contato-equipe" class="section">
+        <div class="section-head section-head-center">
+            <span class="section-kicker section-kicker-birthday"><i class="fas fa-address-book"></i> Contato Equipe CAEL</span>
+            <h2 class="section-title">Venha nos <span class="accent-orange">visitar</span></h2>
+            <p class="section-sub center">Estamos prontos para te receber em nossa sede.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="info-card-head">
+                <i class="fas fa-building info-card-icon"></i>
+                <div>
+                    <h3>CAEL — Centro de Artes, Educação e Lazer</h3>
+                    <span class="info-cnpj">CNPJ 23.757.393/0001-88</span>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <a class="info-item" href="https://maps.google.com/?q=Rua+Marechal+Rondon+994+Jardim+Santo+Stefano+Salto+SP" target="_blank" rel="noopener noreferrer" data-testid="info-endereco">
+                    <span class="info-ic"><i class="fas fa-location-dot"></i></span>
+                    <div>
+                        <strong>Endereço</strong>
+                        <p>Rua Marechal Rondon, 994<br>Jardim Santo Stefano · Salto/SP<br>CEP 13.323-100</p>
+                    </div>
+                </a>
+
+                <a class="info-item" href="https://wa.me/5511998000767" target="_blank" rel="noopener noreferrer" data-testid="info-whatsapp">
+                    <span class="info-ic info-ic-green"><i class="fab fa-whatsapp"></i></span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>(11) 9 9800-0767</p>
+                    </div>
+                </a>
+
+                <a class="info-item" href="mailto:academicobia@caelsalto.com.br" data-testid="info-email">
+                    <span class="info-ic info-ic-orange"><i class="fas fa-envelope"></i></span>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>academicobia@caelsalto.com.br</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="verse-block">
+                <i class="fas fa-quote-left verse-quote"></i>
+                <p class="verse-text">Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente.</p>
+                <span class="verse-ref">— Romanos 12:2</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <div class="section-head">
+            <span class="section-kicker"><i class="fas fa-envelope-open-text"></i> Contato</span>
+            <h2 class="section-title">Vamos conversar sobre a sua <span class="accent-orange">jornada artística</span></h2>
+            <p class="section-sub">Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" data-testid="contact-form" novalidate>
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="responsavel">Nome completo do responsável <span>*</span></label>
+                    <input type="text" id="responsavel" name="responsavel" required data-testid="input-responsavel">
+                </div>
+                <div class="form-field">
+                    <label for="aluno">Nome completo do aluno(a) <span>*</span></label>
+                    <input type="text" id="aluno" name="aluno" required data-testid="input-aluno">
+                </div>
+                <div class="form-field">
+                    <label for="idade">Idade do aluno(a) <span>*</span></label>
+                    <input type="number" id="idade" name="idade" min="1" max="120" required data-testid="input-idade">
+                </div>
+                <div class="form-field">
+                    <label for="cidade">Cidade <span>*</span></label>
+                    <input type="text" id="cidade" name="cidade" required data-testid="input-cidade">
+                </div>
+                <div class="form-field form-field-phone">
+                    <label>Telefone (WhatsApp) <span>*</span></label>
+                    <div class="phone-row">
+                        <input type="text" id="ddd" name="ddd" placeholder="DDD" maxlength="3" required data-testid="input-ddd">
+                        <input type="tel" id="telefone" name="telefone" placeholder="99999-9999" required data-testid="input-telefone">
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="email">E-mail (opcional)</label>
+                    <input type="email" id="email" name="email" data-testid="input-email">
+                </div>
+            </div>
+
+            <div class="form-field full">
+                <label>Modalidade de interesse <span>*</span></label>
+                <div class="modality-options">
+                    <label class="modality">
+                        <input type="radio" name="modalidade" value="teatral" required data-testid="modality-teatral">
+                        <div class="modality-card">
+                            <i class="fas fa-masks-theater"></i>
+                            <strong>Grade Teatral</strong>
+                            <span>Teatro, TV, Cinema, Canto e Dança</span>
+                        </div>
+                    </label>
+                    <label class="modality">
+                        <input type="radio" name="modalidade" value="circo" data-testid="modality-circo">
+                        <div class="modality-card">
+                            <i class="fas fa-tent-arrow-turn-left"></i>
+                            <strong>Grade de Circo</strong>
+                            <span>Atividades aéreas e solo</span>
+                        </div>
+                    </label>
+                    <label class="modality">
+                        <input type="radio" name="modalidade" value="dublagem" data-testid="modality-dublagem">
+                        <div class="modality-card">
+                            <i class="fas fa-microphone-lines"></i>
+                            <strong>Grade de Dublagem</strong>
+                            <span>Treinamento imersivo</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-field full">
+                <label for="experiencia">Conte sua experiência</label>
+                <textarea id="experiencia" name="experiencia" rows="3" placeholder="Descreva se possui ou não experiência na área escolhida, ou qual sua ligação com a arte." data-testid="input-experiencia"></textarea>
+            </div>
+
+            <div class="form-field full">
+                <label>Seu objetivo é pessoal ou profissional? <span>*</span></label>
+                <div class="objective-row">
+                    <label class="pill-radio">
+                        <input type="radio" name="objetivo" value="pessoal" required data-testid="objetivo-pessoal">
+                        <span><i class="fas fa-heart"></i> Pessoal</span>
+                    </label>
+                    <label class="pill-radio">
+                        <input type="radio" name="objetivo" value="profissional" data-testid="objetivo-profissional">
+                        <span><i class="fas fa-briefcase"></i> Profissional</span>
+                    </label>
+                </div>
+                <textarea name="objetivo_detalhes" rows="3" placeholder="Conte-nos um pouco sobre..." data-testid="input-objetivo-detalhes"></textarea>
+            </div>
+
+            <button type="submit" class="cta-button submit-btn" data-testid="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                <span>Enviar inscrição</span>
+            </button>
+        </form>
+
+        <div id="thanks-message" class="thanks-message" data-testid="thanks-message" hidden>
+            <i class="fas fa-heart"></i>
+            <p>A equipe <strong>CAEL</strong> agradece de coração o seu contato e o interesse em fazer parte da nossa história! Nosso maior propósito é caminhar ao seu lado, contribuindo da melhor forma para o seu crescimento pessoal e profissional.</p>
+            <p class="quote">“Sou quem Sou, porque Somos Todos Nós!”</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-phrase">
+        <h2>Sou quem Sou, porque<br>Somos Todos Nós!</h2>
+        <div class="footer-links">
+            <a href="index.html" data-testid="footer-home"><i class="fas fa-home"></i> Início</a>
+            <a href="#contato" data-testid="footer-contato"><i class="fas fa-envelope"></i> Contato</a>
+        </div>
+    </footer>
+
+    <script src="cursos.js"></script>
+</body>
+</html>

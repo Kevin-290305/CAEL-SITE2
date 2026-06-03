@@ -1,0 +1,283 @@
+/* ==========================================
+   PÁGINA EM MANUTENÇÃO — CAEL
+   Tema mantido: preto + manchas + ícones flutuantes
+   ========================================== */
+
+.page-manutencao {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.manut-main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 3rem 1.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.manut-card {
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.manut-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 2rem;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255, 122, 0, 0.5), rgba(157, 76, 221, 0.5), rgba(255, 215, 0, 0.5));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* ----- Palco com cortinas + ferramenta ----- */
+.manut-icon-stage {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 30%, #2a1238 0%, #0a0a0a 70%);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.6);
+}
+
+.manut-spotlight {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250%;
+    height: 200%;
+    background: radial-gradient(ellipse at top, rgba(255, 215, 0, 0.35) 0%, transparent 45%);
+    animation: spotlightSway 4s ease-in-out infinite;
+}
+
+@keyframes spotlightSway {
+    0%, 100% { transform: translateX(-55%) rotate(-2deg); }
+    50% { transform: translateX(-45%) rotate(2deg); }
+}
+
+.manut-curtain {
+    position: absolute;
+    top: 0;
+    width: 28%;
+    height: 100%;
+    background:
+        repeating-linear-gradient(90deg, #8B0000 0px, #B22222 8px, #8B0000 16px),
+        linear-gradient(180deg, #4d0000, #8B0000);
+    box-shadow: inset -10px 0 20px rgba(0,0,0,0.5);
+}
+
+.manut-curtain-left { left: 0; border-radius: 0 0 0 1.5rem; }
+.manut-curtain-right { right: 0; border-radius: 0 0 1.5rem 0; transform: scaleX(-1); }
+
+.manut-curtain::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFD700, #FF7A00);
+    opacity: 0.9;
+}
+
+.manut-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.6rem;
+    color: #FFD700;
+    filter: drop-shadow(0 0 18px rgba(255, 215, 0, 0.7));
+    animation: toolSwing 2.4s ease-in-out infinite;
+    z-index: 3;
+}
+
+@keyframes toolSwing {
+    0%, 100% { transform: translate(-50%, -50%) rotate(-12deg); }
+    50% { transform: translate(-50%, -50%) rotate(15deg); }
+}
+
+.manut-gear {
+    position: absolute;
+    color: #FF7A00;
+    filter: drop-shadow(0 0 8px rgba(255, 122, 0, 0.55));
+    z-index: 2;
+}
+
+.manut-gear-1 {
+    top: 22%;
+    right: 30%;
+    font-size: 1.4rem;
+    animation: gearSpin 6s linear infinite;
+}
+
+.manut-gear-2 {
+    bottom: 18%;
+    left: 30%;
+    font-size: 1.1rem;
+    color: #C28DFC;
+    animation: gearSpin 8s linear infinite reverse;
+}
+
+@keyframes gearSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* ----- Texto ----- */
+.manut-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+    border-radius: 9999px;
+    background: rgba(255, 122, 0, 0.15);
+    border: 1px solid rgba(255, 122, 0, 0.45);
+    color: #FFB800;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+body[data-area="eventos"] .manut-kicker {
+    background: rgba(157, 76, 221, 0.15);
+    border-color: rgba(157, 76, 221, 0.5);
+    color: #C28DFC;
+}
+
+.manut-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.2rem;
+}
+
+.manut-title-accent {
+    background: linear-gradient(135deg, #FFD700 0%, #FF7A00 50%, #FF3D00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 40px rgba(255, 122, 0, 0.35);
+}
+
+body[data-area="eventos"] .manut-title-accent {
+    background: linear-gradient(135deg, #FFD700 0%, #C28DFC 50%, #9D4CDD 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.manut-message {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.08rem;
+    line-height: 1.7;
+    max-width: 540px;
+    margin: 0 auto 1.8rem;
+}
+
+/* Barra de progresso animada */
+.manut-progress {
+    width: 80%;
+    max-width: 360px;
+    height: 8px;
+    margin: 0 auto 1.8rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.manut-progress-bar {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, #FF7A00, #FFD700, #FF7A00);
+    background-size: 200% 100%;
+    border-radius: 9999px;
+    animation: progressMove 2.6s ease-in-out infinite, progressGradient 2s ease-in-out infinite;
+    box-shadow: 0 0 14px rgba(255, 122, 0, 0.7);
+}
+
+@keyframes progressMove {
+    0% { margin-left: -30%; }
+    100% { margin-left: 100%; }
+}
+
+@keyframes progressGradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.manut-quote {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 2.2rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Botões */
+.manut-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.manut-actions .btn-hero {
+    width: auto;
+    min-width: 280px;
+}
+
+.manut-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 9999px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: rgba(157, 76, 221, 0.18);
+    border: 1.5px solid rgba(157, 76, 221, 0.5);
+    transition: all 0.25s ease;
+}
+
+.manut-secondary:hover {
+    background: rgba(157, 76, 221, 0.32);
+    border-color: #C28DFC;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(157, 76, 221, 0.5);
+}
+
+@media (max-width: 640px) {
+    .manut-card { padding: 2rem 1.4rem; }
+    .manut-icon-stage { width: 140px; height: 140px; }
+    .manut-icon { font-size: 2.8rem; }
+}
