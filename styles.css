@@ -762,6 +762,23 @@ body {
     padding-top: 7rem;     /* espaço reservado para a logo no topo */
     padding-bottom: 3rem;
 }
+@media (max-width: 768px) {
+    .logos-mobile-container {
+        display: flex;
+        flex-direction: column; /* Uma embaixo da outra */
+        align-items: center;    /* Centraliza na tela */
+        gap: 0.2rem;            /* Espaço entre a SATED e a MEC */
+        margin-top: 4rem;       /* Empurra elas para baixo do texto amarelo */
+        margin-bottom: 3rem;    /* Dá um respiro no final da página */
+        width: 100%;
+    }}
+
+    .logos-mobile-container img {
+        max-width: 300px;       /* Ajuste esse valor para o tamanho que achar melhor */
+        height: auto;
+    }
+
+    
 
 @media (min-width: 481px) and (max-width: 767px) {
     .main-container { padding-top: 8.5rem; padding-left: 1rem; padding-right: 1rem; }
@@ -851,27 +868,13 @@ body {
 
 .brand-logosated {
     position: absolute;     /* fica fixa no TOPO da página (some ao rolar para baixo) */
-    top: 80rem;
-    left: -10%;
-    z-index: -10%;
+    top: 1000rem;
+    right: -640%;
+    z-index: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: .0rem;
+    gap: 9.0rem;
     pointer-events: none;
-    transform: scale(0.8);
-}
-
-.brand-logomec {
-   position: absolute;     /* fica fixa no TOPO da página (some ao rolar para baixo) */
-    top: 90rem;
-    left: -55%;
-    z-index: -10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .0rem;
-    pointer-events: none;
-    transform: scale(0.8);
 }
 }
