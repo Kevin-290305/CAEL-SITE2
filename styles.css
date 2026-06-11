@@ -763,15 +763,39 @@ body {
     padding-bottom: 9rem;
 }
 @media (max-width: 768px) {
-    .logos-mobile-sated {
-        display: flex;
-        flex-direction: column; /* Uma embaixo da outra */
-        align-items: center;    /* Centraliza na tela */
-        gap: 0.2rem;            /* Espaço entre a SATED e a MEC */
-        margin-top: 4rem;       /* Empurra elas para baixo do texto amarelo */
-        margin-bottom: 3rem;    /* Dá um respiro no final da página */
-        width: 100%;
-    }}
+    .brand-logosated {
+        position: absolute;
+        top: 83rem;
+        left: 88%;
+        transform: translateX(-50%);
+        z-index: 20;
+    }
+
+    .brand-logomec {
+        position: absolute;
+        top: 93rem;
+        left: 88%;
+        right: auto;
+        transform: translateX(-50%);
+        z-index: 20;
+    }
+
+    .brand-logosated-img {
+        width: 280px;
+        height: auto;
+        transform: none;
+    }
+
+    .brand-logomec-img {
+        width: 200px;
+        height: auto;
+        transform: none;
+    }
+
+    .main-container {
+        padding-bottom: 28rem;
+    }
+}
 
     
 
