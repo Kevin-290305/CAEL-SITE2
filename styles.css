@@ -759,8 +759,8 @@ body {
 
 /* ====== Safe area para o conteúdo (evita sobreposição com logo/ingressos fixos) ====== */
 .main-container {
-    padding-top: 7rem;     /* espaço reservado para a logo no topo */
-    padding-bottom: 3rem;
+    padding-top: 10rem;     /* espaço reservado para a logo no topo */
+    padding-bottom: 9rem;
 }
 @media (max-width: 768px) {
     .logos-mobile-sated {
